@@ -1,0 +1,77 @@
+/* Base Layout */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f2f5f8;
+    color: #2f2f2f;
+    line-height: 1.7;
+}
+
+/* Top Banner */
+header {
+    background: #0a74b8;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 12px;
+}
+
+header img {
+    margin-top: 12px;
+    border-radius: 100%;
+}
+
+/* Content Blocks */
+section {
+    width: min(92%, 880px);
+    margin: 24px auto;
+    padding: 22px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #0a74b8;
+    margin-bottom: 12px;
+}
+
+/* Skills / Lists */
+ul {
+    padding-left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: square;
+}
+
+ul li {
+    background: #d9ecff;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Bottom Area */
+footer {
+    background: #0a74b8;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.9rem;
+}
+
+/* Small Screen Adjustments */
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 16px;
+        margin: 14px;
+    }
+}
