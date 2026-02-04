@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Utility App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- COUNTER SECTION -->
+  <section class="card">
+    <h2>Number Tracker</h2>
+    <div id="trackerValue">0</div>
+
+    <div class="controls">
+      <button id="minusBtn">−</button>
+      <button id="clearBtn">Reset</button>
+      <button id="plusBtn">+</button>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION -->
+  <section class="card">
+    <h2>Quick Calculator</h2>
+
+    <input id="valueOne" type="number" placeholder="First value">
+    <input id="valueTwo" type="number" placeholder="Second value">
+
+    <div class="controls">
+      <button data-action="sum">Add</button>
+      <button data-action="diff">Subtract</button>
+      <button data-action="prod">Multiply</button>
+      <button data-action="quot">Divide</button>
+    </div>
+
+    <p>Output: <span id="calcResult">---</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
